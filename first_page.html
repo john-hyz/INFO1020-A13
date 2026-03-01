@@ -24,6 +24,21 @@
         --c-cyan: rgb(42,161,152);
         --c-green: rgb(133,153,0);
       }
+      body {
+        background-color: var(--c-background-color);
+      }
+      body header,footer {
+        background-color: var(--c-background-highlights);
+      }
+      body main,header,footer {
+        color: var(--base-font-color);
+      }
+      body article a {
+        color: var(--c-magenta);
+      }
+      body article a:hover {
+        color: var(--c-orange);
+      }
     </style>
 
   </head>
@@ -58,7 +73,7 @@
       <article>
         <h2>Article heading</h2>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. <a href="#">Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue.</a> Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
 
         <h3>Subsection</h3>
 
