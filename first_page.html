@@ -26,6 +26,7 @@
       }
       body {
         background-color: var(--c-background-color);
+        max-width: 800px;
       }
       body header,footer {
         background-color: var(--c-background-highlights);
@@ -51,6 +52,29 @@
         list-style-type: none;
         display: flex;
         justify-content: space-evenly;
+      }
+      body aside {
+        color: var(--c-green);
+      }
+      body aside a {
+        color: var(--c-red);
+      }
+      body aside a:hover {
+        color: var(--c-blue);
+      }
+      body article :is(h1, h2, h3, h4, h5, h6) {
+        padding-top: 50px;
+      }
+      body article {
+        float: left;
+        width: 87%;
+      }
+      body aside {
+        float: right;
+        width: 13%;
+      }
+      body footer {
+        clear: both;
       }
     </style>
 
