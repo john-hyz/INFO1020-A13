@@ -34,15 +34,6 @@
       body main,header,footer {
         color: var(--base-font-color);
       }
-      body article a {
-        color: var(--c-magenta);
-      }
-      body article a:hover {
-        color: var(--c-orange);
-      }
-      body article div.subsection {
-        border: 3px solid var(--c-cyan);
-      }
       body header {
         text-align: center;
         font-size: 150%;
@@ -53,25 +44,32 @@
         display: flex;
         justify-content: space-evenly;
       }
-      body aside {
-        color: var(--c-green);
-      }
-      body aside a {
-        color: var(--c-red);
-      }
-      body aside a:hover {
-        color: var(--c-blue);
-      }
-      body article :is(h1, h2, h3, h4, h5, h6) {
-        padding-top: 50px;
-      }
-      body article {
+      body main article {
         float: left;
         width: 87%;
       }
-      body aside {
+      body main article :is(h1, h2, h3, h4, h5, h6) {
+        padding-top: 50px;
+      }
+      body main article a {
+        color: var(--c-magenta);
+      }
+      body main article a:hover {
+        color: var(--c-orange);
+      }
+      body main article div.subsection {
+        border: 3px solid var(--c-cyan);
+      }
+      body main aside {
         float: right;
         width: 13%;
+        color: var(--c-green);
+      }
+      body main aside a {
+        color: var(--c-red);
+      }
+      body main aside a:hover {
+        color: var(--c-blue);
       }
       body footer {
         clear: both;
